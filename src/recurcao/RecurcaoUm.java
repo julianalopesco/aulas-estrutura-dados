@@ -2,11 +2,9 @@ package recurcao;
 
 import javax.swing.*;
 
-class Somar100
+public class RecurcaoUm {
 
- {
-
-   public static int Soma1 (int nro, int soma)
+   public static int Soma1 (int nro, int soma) // soma1: método recursivo que soma números de um a 10 
 
     {
 
@@ -14,7 +12,7 @@ class Somar100
 
       
 
-        if (nro == 100){
+        if (nro == 10){
 
           s = nro + soma;
 
@@ -22,7 +20,7 @@ class Somar100
 
         else{
 
-          s = Soma1(nro+1, nro+soma);
+          s = Soma1(nro+1, nro+soma); // faz o incremento dos números 
 
         }
 
@@ -30,7 +28,7 @@ class Somar100
 
     }
 
-   public static void main (String arg [])
+   public static void main (String arg []) // ponto de entrada do programa 
 
     {
 
@@ -38,7 +36,7 @@ class Somar100
 
       soma = Soma1(1, 0);
 
-      JOptionPane.showMessageDialog(null,"A soma dos cem primeiros números é: "+soma);
+      JOptionPane.showMessageDialog(null,"A soma dos 10 primeiros números é: "+soma);
 
    
 
